@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="TextStyle" parent="TextAppearance.AppCompat">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+    <style name="List" parent="android:Widget.ListView">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/darkgrey</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:choiceMode">singleChoice</item>
+
+    </style>
+    <style name="Animationpopwindows">
+        <item name="android:windowEnterAnimation">@anim/alpha</item>
+        <item name="android:windowExitAnimation">@anim/alpha_exit</item>
+    </style>
+    <style name="Translucent" parent="android:style/Theme.DeviceDefault.Dialog">
+
+        <item name="android:background">@color/blackTransparent3</item>
+        <item name="android:windowBackground">@color/blackTransparent4</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+
+    </style>
+</resources>

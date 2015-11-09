@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.zyytkj.www.inventory.Scan">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:background="@mipmap/title_background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描"
+        style="@style/TextStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/btn_return_style"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:id="@+id/btn_return"
+        />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/scan_kuang"
+    android:layout_below="@+id/title"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:alpha="0.8"
+    android:id="@+id/scaninfo"
+
+
+    >
+    <TextView
+        android:id="@+id/txtscaninfo"
+        android:layout_width="240dp"
+        android:layout_height="260dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+
+        android:padding="2dp"
+        />
+
+</RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_select"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scaninfo"
+        android:layout_marginTop="30dp"
+        android:text="扫描"
+        android:alpha="0.8"
+        android:id="@+id/btn_set"
+        android:layout_alignLeft="@+id/scaninfo"
+        android:layout_alignRight="@+id/scaninfo"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@mipmap/background"
+    tools:context="com.zyytkj.www.inventory.Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:background="@mipmap/title_background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="盘点计划"
+        style="@style/TextStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/btn_return_style"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:id="@+id/btn_return"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/tabbar"
+        android:id="@+id/listview"
+        android:gravity="center_horizontal"
+        >
+
+        <!--<include layout="@layout/list_batch" />-->
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pandianinfo_kuang"
+        android:layout_below="@+id/title"
+
+        android:clickable="true"
+        android:id="@+id/r1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/pandianname"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/headimg1"
+            android:focusable="true"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发部盘点"
+            android:layout_toRightOf="@+id/headimg1"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="22dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pandianinfo_kuang"
+        android:layout_below="@+id/r1"
+
+        android:clickable="true"
+        android:id="@+id/r2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/startdt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/headimg2"
+            android:focusable="true"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始日期"
+            android:layout_toRightOf="@+id/headimg2"
+            android:textColor="@color/white"
+            android:alpha="0.7"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/start_dt_title"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_alignTop="@+id/headimg2"
+            />
+
+        <TextView
+            android:layout_below="@+id/start_dt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发部盘点"
+            android:layout_toRightOf="@+id/headimg2"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/start_dt"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pandianinfo_kuang"
+        android:layout_below="@+id/r2"
+
+        android:clickable="true"
+        android:id="@+id/r3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/enddt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/headimg3"
+            android:focusable="true"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束日期"
+            android:layout_toRightOf="@+id/headimg3"
+            android:textColor="@color/white"
+            android:alpha="0.7"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/start_dt_title2"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_alignTop="@+id/headimg3"
+            />
+
+        <TextView
+            android:layout_below="@+id/start_dt_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发部盘点"
+            android:layout_toRightOf="@+id/headimg3"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/end_dt"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_select"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r3"
+        android:layout_marginTop="30dp"
+        android:text="二维码"
+        android:alpha="0.8"
+        android:id="@+id/btn_scan"
+        />
+
+
+
+
+</RelativeLayout>

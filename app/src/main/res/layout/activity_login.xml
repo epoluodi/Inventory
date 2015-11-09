@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@mipmap/background"
+    tools:context="com.zyytkj.www.inventory.Login">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/title_background"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="盘点登录"
+        style="@style/TextStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        />
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/login_input_background"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/r1"
+    android:alpha="0.8"
+
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:paddingLeft="30dp"
+        android:background="@mipmap/login_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/loginuser"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginuser"
+        android:background="@mipmap/login_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="admin"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:paddingLeft="30dp"
+        android:password="true"
+        android:id="@+id/loginpwd"
+        android:singleLine="true"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_select"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginpwd"
+        android:layout_marginTop="30dp"
+        android:text="登录"
+        android:alpha="0.8"
+        android:id="@+id/btn_login"
+        />
+</RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/nickpng"
+        android:layout_alignTop="@+id/r1"
+        android:layout_marginTop="-30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/menu_background"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:alpha="0.8"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_select"
+        android:text="在线盘点"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:tag="1"
+        android:id="@+id/online"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_select"
+        android:text="离线盘点"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:tag="2"
+        android:id="@+id/offline"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_select"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:id="@+id/setting"
+        android:tag="3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_select"
+        android:text="关于"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:tag="4"
+        android:id="@+id/about"
+        />
+</LinearLayout>
+
+
+
+</RelativeLayout>

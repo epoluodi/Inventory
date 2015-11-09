@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@mipmap/background"
+    tools:context="com.zyytkj.www.inventory.Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:background="@mipmap/title_background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="盘点计划"
+        style="@style/TextStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/btn_return_style"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:id="@+id/btn_return"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/tabbar"
+        android:id="@+id/listview"
+        android:gravity="center_horizontal"
+        >
+
+    <!--<include layout="@layout/list_batch" />-->
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@mipmap/menu_background"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:alpha="0.8"-->
+        <!--android:id="@+id/tabbar"-->
+        <!-->-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:text="在线盘点"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:text="离线盘点"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:text="设置"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:text="关于"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+
+
+</RelativeLayout>

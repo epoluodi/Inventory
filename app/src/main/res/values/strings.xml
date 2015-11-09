@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">资产盘点</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_pandian_info">PandianInfo</string>
+    <string name="title_activity_scan">Scan</string>
+</resources>
